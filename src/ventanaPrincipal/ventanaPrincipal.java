@@ -227,6 +227,7 @@ public class ventanaPrincipal extends javax.swing.JFrame {
 
         menuArchivo.setText("Archivo");
 
+        menuArchivoNuevo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menuArchivoNuevo.setText("Nuevo");
         menuArchivoNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -235,6 +236,7 @@ public class ventanaPrincipal extends javax.swing.JFrame {
         });
         menuArchivo.add(menuArchivoNuevo);
 
+        menuArchivoAbrir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menuArchivoAbrir.setText("Abrir");
         menuArchivoAbrir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -243,6 +245,7 @@ public class ventanaPrincipal extends javax.swing.JFrame {
         });
         menuArchivo.add(menuArchivoAbrir);
 
+        menuArchivoGuardar.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menuArchivoGuardar.setText("Guardar");
         menuArchivoGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -251,6 +254,7 @@ public class ventanaPrincipal extends javax.swing.JFrame {
         });
         menuArchivo.add(menuArchivoGuardar);
 
+        menuArchivoGuardarComo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menuArchivoGuardarComo.setText("Guardar como");
         menuArchivoGuardarComo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
