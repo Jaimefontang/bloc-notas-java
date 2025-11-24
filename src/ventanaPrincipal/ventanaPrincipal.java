@@ -33,7 +33,7 @@ public class ventanaPrincipal extends javax.swing.JFrame {
     public ventanaPrincipal() {
         initComponents();
         //Setea el nombre de la App como "Bloc de notas"
-        setTitle("Bloc de notas");
+        setTitle("Bloc de notas - Jaime Fontán");
         //Añade un icono de un bloc de notas
         setIconImage(new javax.swing.ImageIcon(getClass().getResource("recursos/icono.png")).getImage());
     }
