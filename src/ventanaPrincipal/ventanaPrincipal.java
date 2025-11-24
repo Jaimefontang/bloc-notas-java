@@ -32,6 +32,10 @@ public class ventanaPrincipal extends javax.swing.JFrame {
      */
     public ventanaPrincipal() {
         initComponents();
+        //Setea el nombre de la App como "Bloc de notas"
+        setTitle("Bloc de notas");
+        //Añade un icono de un bloc de notas
+        setIconImage(new javax.swing.ImageIcon(getClass().getResource("recursos/icono.png")).getImage());
     }
 
 //------MÉTODOS DE LÓGICA DE LA APLICACIÓN------
@@ -215,7 +219,9 @@ public class ventanaPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        textArea.setBackground(new java.awt.Color(245, 240, 220));
         textArea.setColumns(20);
+        textArea.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
         textArea.setRows(5);
         jScrollPane1.setViewportView(textArea);
 
@@ -383,8 +389,7 @@ public class ventanaPrincipal extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(() -> new ventanaPrincipal().setVisible(true));
     }
 
-    
-       //------DECLARACIÓN DE COMPONENTES GRÁFICOS------
+    //------DECLARACIÓN DE COMPONENTES GRÁFICOS------
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JMenuBar menu;
